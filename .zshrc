@@ -109,9 +109,11 @@ alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
 alias godeps="go get -d ./.."
 
 # Terraform stuff
-alias tf=terraform
-alias tfp=terraform plan
-alias turntheearth=terraform apply
+alias tf="terraform"
+alias tfp="terraform plan"
+alias turntheearth="terraform apply"
+alias tfv="terraform validate"
+alias tff="terraform fmt"
 
 # System stuff
 alias pipehist="history | grep"

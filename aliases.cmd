@@ -28,3 +28,5 @@ doskey godeps=go get -d ./..
 doskey tf=terraform $*
 doskey tfp=terraform plan $*
 doskey turntheearth=terraform apply $*
+doskey tfv=terraform validate
+doskey tff=terraform fmt

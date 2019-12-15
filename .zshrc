@@ -106,7 +106,7 @@ alias j8="export JAVA_HOME=`/usr/libexec/java_home -v 1.8`; java -version"
 alias j10="export JAVA_HOME=`/usr/libexec/java_home -v 10`; java -version"
 
 # Go stuff
-alias godeps="go get -d ./.."
+alias godeps="go get ./..."
 
 # Terraform stuff
 alias tf="terraform"
@@ -131,21 +131,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# Python stuff
-source "/usr/local/bin/virtualenvwrapper.sh"
-export WORKON_HOME="/Users/{username}/.virtualenvs/"
-venvwrap="virtualenvwrapper.sh"
-/usr/bin/which -s $venvwrap
-if [ $? -eq 0 ]; then
-    venvwrap=`/usr/bin/which $venvwrap`
-    source $venvwrap
-fi
-alias pythondens='lsvirtualenv -l'
-
-# allow multiple python versions
-if command -v pyenv 2>/dev/null; then
-  eval "$(pyenv init -)"
-fi
 
 # Airflow stuff
 AIRFLOW_HOME=~/Documents/{replacewithdir}
